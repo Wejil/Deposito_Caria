@@ -4,7 +4,7 @@ Salva la **cronostoria** di ogni singola interazione.
 
 
 
-Ovunque ci sono le parentesi, quella è una **funzione**.
+Ovunque ci sono le parentesi, quella è una **funzione** (funzioni incorporate).
 
 Serve a visualizzare l'**output**. Può stampare elementi concatenati o variabili.
 

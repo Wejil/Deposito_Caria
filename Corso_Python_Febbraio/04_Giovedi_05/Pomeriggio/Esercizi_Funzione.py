@@ -21,7 +21,7 @@ def confronta_numeri(tentativo, numero_segreto): # Confronta il tentativo dell'u
         return "alto"
     else:
         return "basso"
-def gioca(): # Funzione principale del "gioco", che gestisce l'intero flusso di esso.
+def gioca(): # Funzione principale del gioco, che gestisce l'intero flusso di esso.
     print("=" * 50)
     print("Indovina il numero")
     print("=" * 50)

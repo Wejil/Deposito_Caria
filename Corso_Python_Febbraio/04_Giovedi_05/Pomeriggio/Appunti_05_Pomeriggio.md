@@ -16,8 +16,8 @@ Servono a **tre** cose:
 
 Possono essere di **due** tipi:
 
-* Con **return**;
-* Senza **return**.
+* Con **return**, ci permette di riutilizzarlo, associabile ad una variabile.
+* Senza **return**, tilizzabile solo una volta, non associabile alla variabile.
 
 
 
@@ -37,6 +37,4 @@ Per eseguire una funzione, bisogna **richiamarla**.
 
 **Parametri keyword**: possono essere passati in qualsiasi ordine specificando il nome del parametro.
 **Parametri di default**: permettono di specificare un valore predefinito che la funzione utilizzerà se non viene fornito un argomento.
-
-
 

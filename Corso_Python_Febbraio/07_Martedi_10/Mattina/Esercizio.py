@@ -33,7 +33,7 @@ class Magazzino:                # Classe che gestisce una collezione di pacchi.
                 return pacco            # Se trovato, restituisce l'oggetto Pacco.
         return None                     # Pacco non trovato.
     
-    def mostra_pacchi_per_stato(self, stato):           # Mostra ttti i pacchi in un certo stato. Parametri: stato, lo stato da cercare (per esempio "in magazzino").
+    def mostra_pacchi_per_stato(self, stato):           # Mostra tutti i pacchi in un certo stato. Parametri: stato, lo stato da cercare (per esempio "in magazzino").
         print(f"Pacchi con stato: '{stato}'")
         pacchi_trovati = []                             # Salva i pacchi in una lista temporanea
         for pacco in self.pacchi:

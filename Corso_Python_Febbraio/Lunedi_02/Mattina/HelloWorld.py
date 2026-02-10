@@ -1,1 +1,0 @@
-print("Ciao mondo") # Lo strumento di stampa

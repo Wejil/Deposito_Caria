@@ -80,7 +80,7 @@ while True:
         psw = input("Password: ")
         if user in negozio.utenti and negozio.utenti[user]["password"] == psw:
             utente_loggato = user
-            print("Bentornato {user}.")
+            print(f"Bentornato {user}.")
         else:
             print("Credenziali errate.")
     elif scelta_iniziale == "2":
@@ -95,3 +95,45 @@ while True:
         break
 
 # Sotto-Menu dopo il login.
+    while utente_loggato:
+        ruolo = negozio.utenti[utente_loggato]["ruolo"] # In base al ruolo che il programma controlla, mostra un menu completamente diverso.
+        if ruolo == "admin": # Check del ruolo e cosa può fare con esso.
+            print("1. Aggiungi/Aggiorna articolo.")
+            print("2. Rimuovi articolo.")
+            print("3. Visualizza inventario completo.")
+            print("4. Analisi guadagni.")
+            print("5. Logout.")
+            azione = input("Scegli: ")
+            if azione == "1":
+                nome = input("Nome articolo: ")
+                p_str = input("Prezzo: ")
+                q_str = input("Quantità: ")
+                if p_str.replace(".", "", 1).isdigit() and q_str.isdigit():
+                    negozio.aggiungi_aggiorna_articolo(nome, float(p_str), int(q_str))
+                else:
+                    print("Dati numerici non validi.")
+            elif azione == "2":
+                nome = input("Nome articolo da rimuovere: ")
+                negozio.rimuovi_articolo(nome)
+            elif azione == "3":
+                negozio.visualizza_inventario_completo()
+            elif azione == "4":
+                negozio.mostra_analisi()
+            elif azione == "5":
+                utente_loggato = None
+        elif ruolo == "cliente":
+            print("1. Visualizza prodotti disponibili.")
+            print("2. Acquista un prodotto.")
+            print("3. Visualizza i miei acquisti.")
+            print("4. Logout.")
+            azione = input("Scegli: ")
+            if azione == "1":
+                negozio.mostra_articoli_disponibili()
+            elif azione == "2":
+                item = input("Quale articolo vuoi acquistare? ")
+                negozio.acquista_articolo(utente_loggato, item)
+            elif azione == "3":
+                miei_acquisti = negozio.utenti[utente_loggato].get("acquisti", [])
+                print(f"Hai comprato: {miei_acquisti}")
+            elif azione == "4":
+                utente_loggato = None

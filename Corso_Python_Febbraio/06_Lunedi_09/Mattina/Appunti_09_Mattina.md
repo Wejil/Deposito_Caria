@@ -8,7 +8,7 @@ Possono esserci quattro cose dentro le classi: attributi = variabili, liste o co
 
 * Una classe definisce un tipo di oggetti nel mondo reale;
 * Una classe è un modello per la creazione di oggetti (in Python);
-* Oggetto = istanta di una classe, ovvero una copia univoca della classe che ha le sue proprietà uniche. Ogni oggetto è un'entità a sé stante;
+* Oggetto = istanza di una classe, ovvero una copia univoca della classe che ha le sue proprietà uniche. Ogni oggetto è un'entità a sé stante;
 * Sono definite usando la parola class seguita dal nome della classe;
 * Possono contenere metodi e attributi.
 
@@ -45,6 +45,6 @@ Il costruttore = **\_\_init\_\_**
 
 **I metodi possono essere di tre tipi**:
 
-* **Metodi di istanza**: tutti i metodi che pososno usare gli oggetti definiti con, ad esempio, def saluta(self):
+* **Metodi di istanza**: tutti i metodi che possono usare gli oggetti definiti con, ad esempio, def saluta(self):
 * **Metodi della classe**: non lavorano sui singoli oggetti, ma sulla classe e sono definiti dal decoratore @classmethod, non hanno il self, ma hanno il (cls) che sarebbe il nome della classe
 * **Metodi statici**: funzioni non legate alla classe (ma sono dentro alla classe) e all'oggetto. Hanno un decoratore @staticmethod.

@@ -92,3 +92,49 @@ mia_fabbrica.resi_prodotto("Smart TV", 1)
 
 # Tentativo di vendita di un prodotto inesistente.
 mia_fabbrica.vendi_prodotto("Smartphone", 1)
+
+# Menu ripetibile.
+mia_fabbrica = Fabbrica()
+
+while True:
+    print("1. Produci un nuovo articolo.")
+    print("2. Vendi un articolo.")
+    print("3. Gestisci un reso.")
+    print("4. Chiudi fabbrica.")
+
+    scelta = input("Scegli un'opzione: ")
+
+    if scelta == "1":
+        tipo = input("Tipo di prodotto? (E = Elettronica / A = Abbigliamento): ")
+        nome = input("Nome prodotto: ")
+        c_str = input("Costo produzione (€): ")
+        p_str = input("Prezzo vendita (€): ")
+        q_str = input("Quantità: ")
+
+        if c_str.replace(".", "", 1).isdigit() and p_str.replace(".", "", 1).isdigit() and q_str.isdigit():
+            costo, prezzo, qta = float(c_str), float(p_str), int(q_str)
+            if tipo == "E":
+                gar = input("Mesi di garanzia: ")
+                mia_fabbrica.aggiungi_prodotto(Elettronica(nome, costo, prezzo, gar), qta)
+            elif tipo == "A":
+                mat = input("Materiale: ")
+                mia_fabbrica.aggiungi_prodotto(Abbigliamento(nome, costo, prezzo, mat), qta)
+        else:
+            print("Dati non validi.")
+    elif scelta == "2":
+        nome_v = input("Cosa vuoi vendere? ")
+        q_v_str = input("Quanti pezzi? ")
+        if q_v_str.isdigit():
+            mia_fabbrica.vendi_prodotto(nome_v, int(q_v_str))
+    elif scelta == "3":
+        nome_r = input("Nome del prodotto reso: ")
+        q_r_str = input("Quanti pzzi vengono restituiti? ")
+        if q_r_str.isdigit():
+            mia_fabbrica.resi_prodotto(nome_r, int(q_r_str))
+        else:
+            print("Inserire un numero valido.")
+    elif scelta == "4":
+        print("Uscita dal sistema.")
+        break
+    else:
+        print("Scelta non valida.")

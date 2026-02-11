@@ -29,7 +29,7 @@ Possono esserci quattro cose dentro le classi: attributi = variabili, liste o co
 
 **\_\_init\_\_** metodo speciale, legato alla classe che anche se si cancella non sparisce. È anche detto **costruttore**: serve per definire quali variabili servono per costruire un oggetto.
 
-**str** = come viene stampato l'oggetto.
+**to string (str)** = come viene stampato l'oggetto.
 
 **self** serve a definire qual è l'oggetto reale che stiamo creando.
 

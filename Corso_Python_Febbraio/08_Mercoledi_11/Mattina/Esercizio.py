@@ -39,7 +39,7 @@ class Giocatore(MembroSquadra):                             # Classi derivate (e
         info_base = super().descrivi()  # Si richiama super().descrivi() per ottenere la parte comune (Nome, Età) e poi si attaccano le informazioni extra.
         return f"[Giocatore] {info_base} | Ruolo: {self.ruolo} | N°: {self.numero_maglia}"
     
-class Allenatore(MembroSquadra):
+class Allenatore(MembroSquadra):    # Classe derivata Allenatore.
     def __init__(self, nome, eta, modulo_preferito):
         super().__init__(nome, eta)
         self.modulo_preferito = modulo_preferito
@@ -47,7 +47,7 @@ class Allenatore(MembroSquadra):
     def descrivi(self):
         return f"[Allenatore] {super().descrivi()} | Modulo: {self.modulo_preferito}"
 
-class Assistente(MembroSquadra):
+class Assistente(MembroSquadra):    # Classe derivata Assistente.
     def __init__(self, nome, eta, specialita):
         super().__init__(nome, eta)
         self.specialita = specialita
@@ -70,7 +70,7 @@ class Squadra:              # Classe squadra, non eredita da nessuno poiché il 
 
 def gioca_partita(squadra1, squadra2):  # Funzione partita esterna che mette in relazione due istanze diverse.
     print(f"Inizio partita: {squadra1.nome_squadra} vs {squadra2.nome_squadra}")
-    gol1 = random.randint(0, 5)         # Simulazione punteggio casuale
+    gol1 = random.randint(0, 5)         # Simulazione punteggio casuale e risultato finale.
     gol2 = random.randint(0, 5)
     print(f"Risultato finale: {squadra1.nome_squadra} {gol1} - {gol2} {squadra2.nome_squadra}")
 

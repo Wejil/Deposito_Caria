@@ -10,3 +10,7 @@ In Python non è necessario che un oggetto appartenga a una determinata gerarchi
 
 **len()** > funziona con vari metodi purché implementino il metodo speciale **\_\_len\_\_()**.
 
+
+
+**main**: nome del file momentaneo che stiamo facendo girare.
+

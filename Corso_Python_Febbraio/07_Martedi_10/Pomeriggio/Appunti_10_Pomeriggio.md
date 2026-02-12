@@ -18,4 +18,4 @@ Ogni modulo deve avere una sua logica unitaria. Si divide per obiettivo (ES.: qu
 
 * **Metodo super**: permettere di utilizzare il costruttore della classe padre esattamente com'è scritta;
 * **Sovrascrittura**: sovrascriviamo i metodi del padre;
-* **Ereditarietà multipla**: Python supporta l'ereditarietà multipla.
+* **Ereditarietà multipla**: Python supporta l'ereditarietà multipla, permettendo a una classe figlia di ereditare da più classi padri.

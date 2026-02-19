@@ -49,7 +49,7 @@ def id_generator():
     except FileNotFoundError:
         return 1  # Se il file non esiste, inizia con ID 1
 
-
+# ottimizzare la funzione per modificare alunni e voti
 def modif_alunni():
 
     righe= read_file().splitlines() 
@@ -62,7 +62,7 @@ def modif_alunni():
 
     trovato= False 
 
-# ciclo per trovare l'id da modificare
+# ciclo per trovare l'id da modificare per ora O(n) modificare in O(1)
     for i in range(1,len(righe)):
         colonne= righe[i].split(",")
 
@@ -83,7 +83,7 @@ def modif_alunni():
 
 
            list_grades = new_voti.split("-")
-           average = sum(map(float, list_grades)) / len(list_grades) if list_grades else 0
+           average = sum(map(float, list_grades)) / len(list_grades) if len(list_grades) > 0 else 0
            average = round(average, 2)
 
 
@@ -100,6 +100,7 @@ def modif_alunni():
 
 
 #funzione per eliminare
+# ottimizzare la funzione
 def delete_student():
     # Leggiamo tutte le righe dal file
     righe = read_file().splitlines()
@@ -152,7 +153,7 @@ while True:
     if header() is None:
         write_file("ID,Studente,Voti,Media")  # Crea il file con l'intestazione se non esiste
 
-    s = input("\nCosa vuoi fare? \n(0) Uscire\n(1) Leggere elenco alunni\n(2) Aggiungere alunno o voto\n(3) Eliminare alunno\n(4) Modificare alunno\nScelta: ")
+    s = input("\nCosa vuoi fare? \n(0) Uscire\n(1) Leggere elenco alunni\n(2) Aggiungere alunno\n(3) Eliminare alunno\n(4) Modificare alunno\nScelta: ")
     
     match s:
         case "0":
@@ -160,6 +161,7 @@ while True:
             break
 
         case "1":
+            #ottimizzarte la stampa dell output
                 r = read_file()
                 print("\n",r)
 
@@ -172,7 +174,7 @@ while True:
                  else:
                     list_grades.append(grades)
 
-             average = sum(map(float, list_grades)) / len(list_grades) if list_grades else 0
+             average = sum(map(float, list_grades)) / len(list_grades) if len(list_grades) > 0  else 0
              average = round(average, 2)  # Arrotonda la media a 2 decimali
              student_info = f"\n{id_generator()},{name},{'-'.join(list_grades)},{average}"
              

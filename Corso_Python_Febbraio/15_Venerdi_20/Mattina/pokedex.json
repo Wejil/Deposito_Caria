@@ -1,56 +1,17 @@
-[
-    {
-        "id": 763,
-        "name": "Tsareena",
-        "height": 12,
-        "weight": 214,
-        "types": [
-            "grass"
-        ]
-    },
-    {
-        "id": 777,
-        "name": "Togedemaru",
-        "height": 3,
-        "weight": 33,
-        "types": [
-            "electric",
-            "steel"
-        ]
-    },
-    {
-        "id": 11,
-        "nome": "metapod",
-        "tipi": [
-            "bug"
-        ],
-        "altezza": 7,
-        "peso": 99,
-        "stats": {
-            "hp": 50,
-            "attack": 20,
-            "defense": 55,
-            "special-attack": 25,
-            "special-defense": 25,
-            "speed": 30
+{
+    "pokemon": [
+        {
+            "name": "pikachu",
+            "id": 25,
+            "height": 4,
+            "weight": 60,
+            "types": [
+                "electric"
+            ],
+            "abilities": [
+                "static",
+                "lightning-rod"
+            ]
         }
-    },
-    {
-        "id": 344,
-        "nome": "claydol",
-        "tipi": [
-            "ground",
-            "psychic"
-        ],
-        "altezza": 15,
-        "peso": 1080,
-        "stats": {
-            "hp": 60,
-            "attack": 70,
-            "defense": 105,
-            "special-attack": 70,
-            "special-defense": 120,
-            "speed": 75
-        }
-    }
-]
+    ]
+}

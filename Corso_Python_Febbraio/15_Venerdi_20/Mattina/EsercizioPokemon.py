@@ -8,7 +8,7 @@ import requests as r
 import json as j
 import random as rd
 
-FILE_NAME = r"Corso_Python_Febbraio\15_Venerdi_20\Mattina/pokedex.json"
+FILE_NAME = r"Corso_Python_Febbraio\15_Venerdi_20\Mattina\pokedex.json"
 
 #creazione del pokedex
 def write_pokedex(pokedex):

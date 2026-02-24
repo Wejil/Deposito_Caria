@@ -1,6 +1,6 @@
 * **Array N-dimensionali**: NumPy introduce l'oggetto ndarray, una struttura di dati N-dimensionale che è una generalizzazione degli array unidimensionali e bidimensionali
 * **Operazioni vettoriali**: operazioni aritmetiche su array di NumPy eseguite in modo vettoriale. Operazioni come somma, sottrazione, moltiplicazione e divisione possono essere applicate a interi array senza loop espliciti.
-* Funzioni Universali (ufuncs): NumPy fornisce funzioni universali che effettuano operazioni element-wise su array. Operazioni come sin, cos, exp, ecc.
+* **Funzioni Universali** (ufuncs): NumPy fornisce funzioni universali che effettuano operazioni element-wise su array. Operazioni come sin, cos, exp, ecc.
 
 
 

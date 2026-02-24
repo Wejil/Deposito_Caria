@@ -10,6 +10,10 @@
 
 
 
+**Array**: modificabile, ordinato, eterogeneo, tipo di dato arr\[] o tonde () + \[].
+
+
+
 **NumPy**: "Numerical Python", è una libreria fondamentale per il calcolo scientifico.
 
 Porta in campo strutture vettoriali ed array.

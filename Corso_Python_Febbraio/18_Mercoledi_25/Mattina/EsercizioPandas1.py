@@ -42,7 +42,6 @@ def prepara_file_di_partenza():
 
 prepara_file_di_partenza()
 
-
 print("1. Caricamento dati dal file.")
 
 # Leggo il csv e trasforma in tabella.

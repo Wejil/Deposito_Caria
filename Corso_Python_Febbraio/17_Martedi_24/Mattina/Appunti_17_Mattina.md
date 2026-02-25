@@ -18,11 +18,13 @@
 
 
 
-Algebra lineare: in NumPy includono un modulo per l'algebra lineare che supporta operazioni.
+**Algebra lineare**: in NumPy includono un modulo per l'algebra lineare che supporta operazioni.
 
 
 
 **Broadcasting**: funzione di NumPy che permette di eseguire operazioni aritmetiche su array di forme diverse. Riduce la necessità di creare array di dimensioni compatibili per le operazioni.
+
+
 
 **Principi del Broadcasting**:
 

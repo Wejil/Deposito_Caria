@@ -34,3 +34,4 @@ Componenti Principali di Matplotlib:
 
 * **Figure**: rappresentano l'intero grafico o gli interi grafici.
 * **Axes**: è una parte della figura in cui c'è un grafico, delle coordinate.
+* **Artist**: titoli, tabelle, elementi che leghiamo al grafico reale, ma che non ne fanno parte.

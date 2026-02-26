@@ -4,8 +4,6 @@
 
 
 
-
-
 * **Operazioni aritmetiche** (vettoriali): np.add(), np.subtract(), np. multiply(), np.divide().
 * **Funzioni matematiche** (sia vettoriali che universali): np.sin(), np.cos(), np.exp(), np.log().
 * **Statistica** (universale): np.mean(), np.mean(), np.std(), np.var().
@@ -29,5 +27,5 @@
 **Principi del Broadcasting**:
 
 * **Allineamento delle Dimensioni**: possiamo avere due elementi uguali o coerenti quando uno dei due è 1;
-* **Espansione delle Dimensioni**: se le dimensioni non sono compatibili, numPy espande le dimensioni di uno degli array automaticamente. L'array con la dimensione 1 viene espanso per avere la stessa dimensione dell'altro array;
+* **Espansione delle Dimensioni**: se le dimensioni non sono compatibili, NumPy espande le dimensioni di uno degli array automaticamente. L'array con la dimensione 1 viene espanso per avere la stessa dimensione dell'altro array;
 * **Applicazione dell'Operazione**: non genera valori, ma li spalma. L'array più piccolo viene replicato per riempire l'array più grande.

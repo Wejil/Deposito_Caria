@@ -21,9 +21,9 @@ Pandas è lo strumento di filtro per arrivare alle analisi e all'utilizzo reale 
 
 
 
-Funzionalità chiave:
+**Funzionalità chiave**:
 
-* Manipolazione dei dati: operazioni complesse sui dati come selezione, filtraggio, raggruppamento e reshaping.
-* Pulizia dei dati: preanalisi dei dati, esplorazione e pulizia. Si compone di manipolazione, esplorazione e pulizia. Rimuove dati mancanti, conversione file sbagliati, rimuove duplicati.
-* Analisi dei dati: supporta operazioni come aggregazioni, sommario statistico e funzioni analitiche per estrarre insight dai dati.
-* Interoperabilità: integrazione con altre librerie in Python per visualizzazione di dati e analisi statistica.
+* **Manipolazione dei dati**: operazioni complesse sui dati come selezione, filtraggio, raggruppamento e reshaping.
+* **Pulizia dei dati:** preanalisi dei dati, esplorazione e pulizia. Si compone di manipolazione, esplorazione e pulizia. Rimuove dati mancanti, conversione file sbagliati, rimuove duplicati.
+* **Analisi dei dati**: supporta operazioni come aggregazioni, sommario statistico e funzioni analitiche per estrarre insight dai dati.
+* **Interoperabilità**: integrazione con altre librerie in Python per visualizzazione di dati e analisi statistica.
